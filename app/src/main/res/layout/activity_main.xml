@@ -4,15 +4,83 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/mainPageMainTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="메인"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        android:layout_margin="8dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageButton
+        android:id="@+id/mainPageUserInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:src="@drawable/baseline_account_circle_48"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.944"
+        app:layout_constraintStart_toEndOf="@id/mainPageMainTextView"
+        app:layout_constraintTop_toTopOf="@id/mainPageMainTextView" />
+
+    <TextView
+        android:id="@+id/mainpageMedi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="약"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/mainPageMainTextView"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/mainPageEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="편집"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/mainPageUserInfo"
+        app:layout_constraintTop_toTopOf="@id/mainpageMedi"/>
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:background="@color/yellow"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        app:layout_constraintStart_toStartOf="@id/mainpageMedi"
+        app:layout_constraintEnd_toEndOf="@id/mainPageEdit"
+        app:layout_constraintTop_toBottomOf="@id/mainpageMedi">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name1"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name2"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -21,9 +21,9 @@ public class MainActivity extends Activity {
         nfcAdapter = NfcAdapter.getDefaultAdapter(this);
 
         // NFC 기능이 꺼져있는 경우 Toast 메시지로 안내
-        if (!nfcAdapter.isEnabled()) {
-            Toast.makeText(this, "NFC 기능이 꺼져 있습니다. NFC를 켜주세요.", Toast.LENGTH_LONG).show();
-        }
+//        if (!nfcAdapter.isEnabled()) {
+//            Toast.makeText(this, "NFC 기능이 꺼져 있습니다. NFC를 켜주세요.", Toast.LENGTH_LONG).show();
+//        }
     }
 
     @Override
