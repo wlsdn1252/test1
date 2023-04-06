@@ -33,7 +33,7 @@
         app:layout_constraintTop_toTopOf="@id/mainPageMainTextView" />
 
     <TextView
-        android:id="@+id/mainpageMedi"
+        android:id="@+id/mainPageMedi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="약"
@@ -54,7 +54,7 @@
         android:textStyle="bold"
         android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="@id/mainPageUserInfo"
-        app:layout_constraintTop_toTopOf="@id/mainpageMedi"/>
+        app:layout_constraintTop_toTopOf="@id/mainPageMedi"/>
 
     <LinearLayout
         android:layout_width="320dp"
@@ -63,9 +63,9 @@
         android:background="@color/yellow"
         android:layout_marginTop="10dp"
         android:padding="10dp"
-        app:layout_constraintStart_toStartOf="@id/mainpageMedi"
+        app:layout_constraintStart_toStartOf="@id/mainPageMedi"
         app:layout_constraintEnd_toEndOf="@id/mainPageEdit"
-        app:layout_constraintTop_toBottomOf="@id/mainpageMedi">
+        app:layout_constraintTop_toBottomOf="@id/mainPageMedi">
 
         <TextView
             android:layout_width="wrap_content"
